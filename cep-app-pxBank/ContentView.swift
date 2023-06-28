@@ -1,21 +1,29 @@
-//
-//  ContentView.swift
-//  cep-app-pxBank
-//
-//  Created by matheus maignardi on 27/06/23.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+    @State private var selectedTab: Tab = .cep
+    
+    enum Tab {
+        case cep
+        case configuracao
+    }
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        TabView(selection: $selectedTab) {
+            SearchCepView()
+                .tabItem {
+                    Image(systemName: "location.circle.fill")
+                    Text("Cep")
+                }
+                .tag(Tab.cep)
+            
+            ConfigView()
+                .tabItem {
+                    Image(systemName: "gear")
+                    Text("Configuração")
+                }
+                .tag(Tab.configuracao)
         }
-        .padding()
     }
 }
 

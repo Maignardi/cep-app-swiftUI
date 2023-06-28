@@ -11,6 +11,12 @@
 		72B1CE5B2A4B8F3200D50984 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B1CE5A2A4B8F3200D50984 /* ContentView.swift */; };
 		72B1CE5D2A4B8F3400D50984 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72B1CE5C2A4B8F3400D50984 /* Assets.xcassets */; };
 		72B1CE602A4B8F3400D50984 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72B1CE5F2A4B8F3400D50984 /* Preview Assets.xcassets */; };
+		72B1CE672A4B918F00D50984 /* SearchCepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B1CE662A4B918F00D50984 /* SearchCepView.swift */; };
+		72B1CE692A4B93F200D50984 /* ConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B1CE682A4B93F200D50984 /* ConfigView.swift */; };
+		72B1CE6B2A4B9BEC00D50984 /* CepCompleteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B1CE6A2A4B9BEC00D50984 /* CepCompleteView.swift */; };
+		72B1CE712A4BA90C00D50984 /* SearchCepViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B1CE702A4BA90C00D50984 /* SearchCepViewModel.swift */; };
+		72B1CE752A4BACB700D50984 /* AdressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B1CE742A4BACB700D50984 /* AdressModel.swift */; };
+		72B1CE772A4BD01700D50984 /* ConfigViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B1CE762A4BD01700D50984 /* ConfigViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		72B1CE5A2A4B8F3200D50984 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		72B1CE5C2A4B8F3400D50984 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72B1CE5F2A4B8F3400D50984 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		72B1CE662A4B918F00D50984 /* SearchCepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCepView.swift; sourceTree = "<group>"; };
+		72B1CE682A4B93F200D50984 /* ConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigView.swift; sourceTree = "<group>"; };
+		72B1CE6A2A4B9BEC00D50984 /* CepCompleteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CepCompleteView.swift; sourceTree = "<group>"; };
+		72B1CE702A4BA90C00D50984 /* SearchCepViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCepViewModel.swift; sourceTree = "<group>"; };
+		72B1CE742A4BACB700D50984 /* AdressModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdressModel.swift; sourceTree = "<group>"; };
+		72B1CE762A4BD01700D50984 /* ConfigViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +63,8 @@
 		72B1CE572A4B8F3200D50984 /* cep-app-pxBank */ = {
 			isa = PBXGroup;
 			children = (
+				72B1CE722A4BAC9800D50984 /* model */,
+				72B1CE6C2A4BA8C100D50984 /* ui */,
 				72B1CE582A4B8F3200D50984 /* cep_app_pxBankApp.swift */,
 				72B1CE5A2A4B8F3200D50984 /* ContentView.swift */,
 				72B1CE5C2A4B8F3400D50984 /* Assets.xcassets */,
@@ -65,6 +79,58 @@
 				72B1CE5F2A4B8F3400D50984 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		72B1CE6C2A4BA8C100D50984 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				72B1CE6F2A4BA8E000D50984 /* CepComplete */,
+				72B1CE6E2A4BA8D800D50984 /* Config */,
+				72B1CE6D2A4BA8CC00D50984 /* SearchCep */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		72B1CE6D2A4BA8CC00D50984 /* SearchCep */ = {
+			isa = PBXGroup;
+			children = (
+				72B1CE662A4B918F00D50984 /* SearchCepView.swift */,
+				72B1CE702A4BA90C00D50984 /* SearchCepViewModel.swift */,
+			);
+			path = SearchCep;
+			sourceTree = "<group>";
+		};
+		72B1CE6E2A4BA8D800D50984 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				72B1CE682A4B93F200D50984 /* ConfigView.swift */,
+				72B1CE762A4BD01700D50984 /* ConfigViewModel.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		72B1CE6F2A4BA8E000D50984 /* CepComplete */ = {
+			isa = PBXGroup;
+			children = (
+				72B1CE6A2A4B9BEC00D50984 /* CepCompleteView.swift */,
+			);
+			path = CepComplete;
+			sourceTree = "<group>";
+		};
+		72B1CE722A4BAC9800D50984 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				72B1CE732A4BACA500D50984 /* Address */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		72B1CE732A4BACA500D50984 /* Address */ = {
+			isa = PBXGroup;
+			children = (
+				72B1CE742A4BACB700D50984 /* AdressModel.swift */,
+			);
+			path = Address;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +203,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72B1CE692A4B93F200D50984 /* ConfigView.swift in Sources */,
 				72B1CE5B2A4B8F3200D50984 /* ContentView.swift in Sources */,
+				72B1CE772A4BD01700D50984 /* ConfigViewModel.swift in Sources */,
+				72B1CE6B2A4B9BEC00D50984 /* CepCompleteView.swift in Sources */,
+				72B1CE752A4BACB700D50984 /* AdressModel.swift in Sources */,
 				72B1CE592A4B8F3200D50984 /* cep_app_pxBankApp.swift in Sources */,
+				72B1CE672A4B918F00D50984 /* SearchCepView.swift in Sources */,
+				72B1CE712A4BA90C00D50984 /* SearchCepViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
