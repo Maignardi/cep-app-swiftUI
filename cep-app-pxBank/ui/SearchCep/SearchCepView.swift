@@ -58,7 +58,6 @@ struct SearchCepView: View {
     }
 }
 
-
 struct SearchCepView_Previews: PreviewProvider {
     static var previews: some View {
         SearchCepView()
